@@ -21,10 +21,11 @@ function draw() {
   strokeWeight(1);
   fill("rgb(52, 215, 20)");
   rect(0,200,600,200);
-  fill(mouseX,0,0)
+ 
   //emojis
   textSize(50);
   text("🐞",mouseX, mouseY);
   text("🐝",mouseX+50, mouseY+ 50);
+  
   
 }

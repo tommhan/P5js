@@ -1,0 +1,11 @@
+const teksti = `Käsi on on paketissa, kirjoitan tekstiä yhdellä kädellä. tarkoitus on opetella funtionaalista ohjelmointia
+ja sen käyttöä. Tässä on esimerkki funtionaalisesta ohjelmoinnista JavaScriptissä. Funktioiden avulla voimme käsitellä tietoa ja suorittaa operaatioita ilman sivuvaikutuksia. Esimerkiksi voimme käyttää map-, filter- ja reduce-funktioita taulukoiden käsittelyyn.
+
+Tässä on esimerkki filter-funktiosta, joka suodattaa taulukon arvot tietyn ehdon perusteella:Ensin teen tekstistä taulukon`;
+
+const taulukko = teksti.split(' ');
+function suodatafuncTaulukko(taulukko) {
+  return taulukko.filter(sana => sana.length > 5);
+}
+const suodatettuTaulukko = taulukko.filter(sana => sana.length > 5);
+console.log(suodatettuTaulukko);

@@ -1,11 +1,10 @@
 import { useState } from 'react'
-import Search from './components/search.jsx'
+
  const teksti = `Käsi on paketissa, kirjoitan tekstiä yhdellä kädellä. tarkoitus on opetella funktiollista ohjelmointia
 ja sen käyttöä. Tässä on esimerkki funktiollisesta ohjelmoinnista JavaScriptissä. Funktioiden avulla voimme käsitellä tietoa ja suorittaa operaatioita ilman sivuvaikutuksia.`;
  
 const taulukko = teksti.split(' ')
-
-
+  
  const getSanaStyle = (sana) => {
     const alkukirjain = sana.toLowerCase()[0]
     return {
@@ -17,7 +16,7 @@ const taulukko = teksti.split(' ')
     return taulukko.filter(sana => sana.length > 5)
   }
 const Tervedys = () => <h1>Hei, tervetuloa!</h1>;
-const App = () => {
+const FunkSearch = () => {
   const [count, setCount] = useState(0)
   
  
@@ -50,8 +49,7 @@ const App = () => {
         Count is {count}
       </button>
     </section>
-    
   )
 }
 
-export default App
+export default FunkSearch
